@@ -1,0 +1,2 @@
+# kabbalistic-core
+flagship project
