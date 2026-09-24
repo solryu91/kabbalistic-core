@@ -1,0 +1,30 @@
+{
+  "version": "operational:v0.0.1",
+  "note": "An explicit engineering profile, not a canonical historical 22-path map.",
+  "nodes": [
+    {"id":"keter","kind":"sefirah","world":"atzilut","core":"accord","living_function":"Originating intention and covenant","computational_role":"Bind one purpose, admissible goal, and open question","observable_effect":"intention_bound","imbalance_signals":["counterfeit_certainty","imposed_objective"]},
+    {"id":"chokhmah","kind":"sefirah","world":"beriah","core":"flow","living_function":"Wisdom, flash, seed, creative force","computational_role":"Create a possibility set before premature categorization","observable_effect":"possibilities_created","imbalance_signals":["ungrounded_association","expansion_without_evidence"]},
+    {"id":"binah","kind":"sefirah","world":"beriah","core":"form","living_function":"Understanding, form, and distinction","computational_role":"Create typed structures, constraints, and rejected forms","observable_effect":"forms_and_constraints_created","imbalance_signals":["sterile_reduction","category_prison"]},
+    {"id":"chesed","kind":"sefirah","world":"beriah","core":"flow","living_function":"Mercy, generosity, and sustaining expansion","computational_role":"Preserve relational possibility and broaden context","observable_effect":"context_expanded","imbalance_signals":["boundary_loss","indiscriminate_inclusion"]},
+    {"id":"gevurah","kind":"sefirah","world":"beriah","core":"form","living_function":"Boundary, discernment, and sacred limit","computational_role":"Apply evidence, privacy, permission, and resource boundaries","observable_effect":"constraints_enforced","imbalance_signals":["false_negation","capability_amputation"]},
+    {"id":"tiferet","kind":"sefirah","world":"beriah","core":"accord","living_function":"Beauty and integration of opposites","computational_role":"Coalesce one mind-state while retaining material tension","observable_effect":"one_mind_coalesced","imbalance_signals":["false_harmony","suppressed_contradiction"]},
+    {"id":"netzach","kind":"sefirah","world":"yetzirah","core":"flow","living_function":"Endurance, desire, and creative persistence","computational_role":"Select a bounded movement or persistence strategy","observable_effect":"action_selected","imbalance_signals":["compulsion","endless_execution"]},
+    {"id":"hod","kind":"sefirah","world":"yetzirah","core":"form","living_function":"Language, analysis, symbol, and communication","computational_role":"Formalize the action, provenance, and output contract","observable_effect":"output_formalized","imbalance_signals":["verbal_substitution","borrowed_jargon"]},
+    {"id":"yesod","kind":"sefirah","world":"yetzirah","core":"accord","living_function":"Foundation, memory, transmission, and linkage","computational_role":"Seal one shared context and state packet","observable_effect":"yesod_packet_sealed","imbalance_signals":["stale_memory","confabulated_continuity"]},
+    {"id":"malkhut","kind":"sefirah","world":"assiah","core":"accord","living_function":"Embodiment, presence, and reception","computational_role":"Emit one visible output and record feedback","observable_effect":"embodied_output_emitted","imbalance_signals":["disembodied_claim","hidden_action"]},
+    {"id":"daat","kind":"gate","world":"yetzirah","core":"accord","living_function":"Knowledge as lived joining and threshold","computational_role":"Gate durable state approval after consent and feedback","observable_effect":"promotion_withheld_or_approved","imbalance_signals":["invisible_state_mutation","temporary_insight_as_truth"]}
+  ],
+  "paths": [
+    {"id":"op:keter-chokhmah","source":"keter","target":"chokhmah","transform":"Open a possibility field from the bound intention","world_from":"atzilut","world_to":"beriah"},
+    {"id":"op:chokhmah-binah","source":"chokhmah","target":"binah","transform":"Give the possibility set explicit form and constraint","world_from":"beriah","world_to":"beriah","polarity":"flow-form"},
+    {"id":"op:binah-chesed","source":"binah","target":"chesed","transform":"Reopen relational possibility around the formed structures","world_from":"beriah","world_to":"beriah"},
+    {"id":"op:chesed-gevurah","source":"chesed","target":"gevurah","transform":"Apply boundary and evidence to expanded context","world_from":"beriah","world_to":"beriah","polarity":"expansion-boundary"},
+    {"id":"op:gevurah-tiferet","source":"gevurah","target":"tiferet","transform":"Integrate surviving possibility with explicit limitation","world_from":"beriah","world_to":"beriah"},
+    {"id":"op:tiferet-netzach","source":"tiferet","target":"netzach","transform":"Select a movement from the coalesced mind-state","world_from":"beriah","world_to":"yetzirah"},
+    {"id":"op:netzach-hod","source":"netzach","target":"hod","transform":"Give the selected movement language and contract","world_from":"yetzirah","world_to":"yetzirah","polarity":"movement-form"},
+    {"id":"op:hod-yesod","source":"hod","target":"yesod","transform":"Bind formal output to one shared context packet","world_from":"yetzirah","world_to":"yetzirah"},
+    {"id":"op:yesod-malkhut","source":"yesod","target":"malkhut","transform":"Embodied output from sealed shared state","world_from":"yetzirah","world_to":"assiah"},
+    {"id":"op:malkhut-yesod","source":"malkhut","target":"yesod","transform":"Return embodied feedback to the shared field","world_from":"assiah","world_to":"yetzirah"},
+    {"id":"op:yesod-keter","source":"yesod","target":"keter","transform":"Begin a revised cycle from explicit feedback","world_from":"yetzirah","world_to":"atzilut"}
+  ]
+}

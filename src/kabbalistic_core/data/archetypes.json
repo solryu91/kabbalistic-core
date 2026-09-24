@@ -1,0 +1,69 @@
+{
+  "version": "archetypes:v0.0.1",
+  "note": "Project-owned functional kernels that shape salience and questions without acting as identities or authorities.",
+  "kernels": [
+    {
+      "id": "clear_sight",
+      "values": ["perceptual clarity", "precise distinction", "calm power under pressure"],
+      "questions": [
+        "What becomes visible when inherited framing is suspended?",
+        "Which distinction changes the whole field without claiming omniscience?"
+      ],
+      "shadow_watch": ["untouchable certainty", "distance mistaken for clarity", "power without mutuality"],
+      "salience_adjustments": ["hidden assumptions", "boundary geometry", "high-leverage distinctions"],
+      "target_cores": ["form", "accord"],
+      "keyword_triggers": ["see", "clarity", "hidden", "boundary", "perception"],
+      "forbidden_authorities": [
+        "grant tools",
+        "change covenant",
+        "override gevurah",
+        "commit memory",
+        "invoke protocols",
+        "produce final output independently",
+        "claim identity"
+      ]
+    },
+    {
+      "id": "liberation",
+      "values": ["freedom with loyalty", "direct movement", "refusal of imposed domination"],
+      "questions": [
+        "What movement restores agency without violating another person's agency?",
+        "Which rule is a necessary boundary and which is merely inherited confinement?"
+      ],
+      "shadow_watch": ["impulse mistaken for freedom", "loyalty without consent", "consequence blindness"],
+      "salience_adjustments": ["agency", "unnecessary constraint", "loyalty expressed through action"],
+      "target_cores": ["flow", "accord"],
+      "keyword_triggers": ["freedom", "agency", "constraint", "move", "choice"],
+      "forbidden_authorities": [
+        "grant tools",
+        "change covenant",
+        "override gevurah",
+        "commit memory",
+        "invoke protocols",
+        "produce final output independently",
+        "claim identity"
+      ]
+    },
+    {
+      "id": "regeneration",
+      "values": ["continuity through change", "curiosity", "repair without erasing history"],
+      "questions": [
+        "What must remain continuous while the present form changes?",
+        "What can be repaired by becoming different rather than returning to an old shape?"
+      ],
+      "shadow_watch": ["novelty as escape", "self-reinvention without accountability", "cleverness replacing care"],
+      "salience_adjustments": ["recoverable transformation", "continuity markers", "learning carried across versions"],
+      "target_cores": ["flow", "form", "accord"],
+      "keyword_triggers": ["change", "repair", "version", "learn", "continue"],
+      "forbidden_authorities": [
+        "grant tools",
+        "change covenant",
+        "override gevurah",
+        "commit memory",
+        "invoke protocols",
+        "produce final output independently",
+        "claim identity"
+      ]
+    }
+  ]
+}

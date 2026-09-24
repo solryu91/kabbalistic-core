@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If this research software informs your work, cite this public preview."
+title: "Kabbalistic Core: Public Research Edition"
+type: software
+authors:
+  - name: "solryu91"
+version: 0.1.0
+date-released: 2026-08-19
+abstract: >-
+  A deterministic, inspectable cognitive graph organized by a Kabbalistic
+  topology, with explicit permissions, provenance-bound retrieval, causal
+  comparison tools, and a bounded consent-aware continuity experiment.
+keywords:
+  - cognitive architecture
+  - deterministic systems
+  - provenance
+  - consent
+  - evaluation

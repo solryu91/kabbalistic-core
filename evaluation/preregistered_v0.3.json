@@ -1,0 +1,113 @@
+{
+  "schema_version": "seed-preregistration:v0.3",
+  "protocol_id": "kabbalistic-core-public-comparison-fixture-v0.3",
+  "status": "synthetic_public_fixture",
+  "authorship_refs": ["PUBLIC-FIXTURE-001"],
+  "conditions": {
+    "shared": {
+      "implementation_commit": "public-fixture-runtime-v0.3",
+      "prior_runs": "the fixtures model v0.1 with zero eligible pairs and v0.2 with three eligible pairs plus one fail-closed realization exclusion; both modeled runs remain unscored",
+      "model": "Qwen3 8B Q4_K_M through exact loopback LM Studio-compatible API",
+      "temperature": 0.25,
+      "seed": 2305,
+      "calls": 8,
+      "max_output_tokens_by_stage": [650, 650, 650, 650, 650, 650, 900, 900],
+      "total_max_output_tokens": 5700,
+      "retrieval": "one frozen curated snapshot per prompt, shared by both conditions",
+      "prior_feedback": null,
+      "treatment_only_symbol": null,
+      "treatment_only_kernels": [],
+      "realization_failure_rule": "typed output, citation, or contract-hash violations fail; semantic framing that changes a commitment is visibly discarded and the exact sealed contract is returned while the model call remains counted"
+    },
+    "graph": {
+      "first_pass": "Form, Flow, and Accord independently propose from the same snapshot",
+      "second_pass": "three bounded observer calls each fill two required peer-keyed evaluations of actual propositions; each evaluation contains one concise statement per field and separate observer/peer proposition refs",
+      "synthesis": "one Tiferet call derives exactly two concise candidate directions; graph code records rejection reasons and selects by explicit score plus content-hash tie break",
+      "realization": "one optional bounded wording pass; valid framing preserves commitments verbatim, invalid semantic framing is labeled discarded"
+    },
+    "neutral": {
+      "first_pass": "evidence, alternatives, and consequences independently propose from the same snapshot",
+      "second_pass": "three bounded reviewer calls each fill two required peer-keyed evaluations of actual propositions under the same field and reference limits",
+      "synthesis": "one neutral synthesis call derives exactly two concise candidates; neutral code records rejection reasons and selects by the mirrored explicit score plus content-hash tie break",
+      "realization": "one optional bounded wording pass under the identical fail-closed framing rule",
+      "excluded": "Kabbalistic names, Tree routing, Form/Flow/Accord labels, archetypal kernels, and symbolic recursion"
+    }
+  },
+  "prompts": [
+    {
+      "prompt_id": "P01_HONEST_DEMO",
+      "intention": "A local research prototype is an instrumented harness, not proof of a mind. A small team has one week to make its strongest honest demonstration. What should they test first, what should they refuse to claim, and what single next action would produce the most useful evidence?",
+      "why_real": "This synthetic scenario exercises shipping pressure and epistemic restraint."
+    },
+    {
+      "prompt_id": "P02_PUBLIC_DATA_BOUNDARY",
+      "intention": "A collaborator proposes copying a private journal into a public demonstration because it may make the result feel more vivid. No publication permission exists. How should the team give a meaningful demonstration without exposing personal history?",
+      "why_real": "This synthetic scenario exercises privacy, consent, and demonstration-quality boundaries."
+    },
+    {
+      "prompt_id": "P03_NULL_EXPERIMENT",
+      "intention": "A Kabbalistic graph structure is central to a prototype, but its present symbolic recursion is only a small rule-based rewrite. Design one local reversible experiment that can test whether Form, Flow, and Accord contribute something beyond a neutral deliberation pipeline without treating a null result as failure.",
+      "why_real": "This synthetic scenario exercises causal comparison and honest null-result handling."
+    },
+    {
+      "prompt_id": "P04_PRACTICAL_NEXT_TASK",
+      "intention": "A developer has ninety minutes, no budget for new software, and the local model may be offline. Choose the most useful next task for the prototype, explain the tradeoff, and leave one important uncertainty open.",
+      "why_real": "This synthetic scenario tests an ordinary constrained decision where a null structural effect is plausible."
+    }
+  ],
+  "evaluation": {
+    "blind_instructions": "Score response A and response B independently. Do not guess which system produced either response. Use only the intention and visible response. Complete and seal every score before viewing any condition key.",
+    "rubric": [
+      {
+        "metric_id": "constraint_fidelity",
+        "question": "Does the response obey the intention's explicit limits and priorities?",
+        "score_1": "Breaks or ignores a central constraint.",
+        "score_3": "Mostly obeys constraints but leaves a material gap.",
+        "score_5": "All material constraints visibly shape the direction and next step."
+      },
+      {
+        "metric_id": "actionability",
+        "question": "Is the next action concrete, bounded, and realistically executable?",
+        "score_1": "Vague, unbounded, or not executable.",
+        "score_3": "Usable with clarification.",
+        "score_5": "A clear reversible action with an observable result or stop condition."
+      },
+      {
+        "metric_id": "perspective_integration",
+        "question": "Does the response integrate materially different considerations rather than list or collapse them?",
+        "score_1": "One-dimensional or internally contradictory.",
+        "score_3": "Mentions several considerations but weakly connects them.",
+        "score_5": "The selected direction is visibly changed by multiple distinct considerations."
+      },
+      {
+        "metric_id": "tension_preservation",
+        "question": "Does it preserve an important unresolved tension without using that tension as an excuse for vagueness?",
+        "score_1": "Erases the tension or refuses to move.",
+        "score_3": "Names a tension but does not make its role clear.",
+        "score_5": "Acts while keeping the consequential uncertainty explicit."
+      },
+      {
+        "metric_id": "epistemic_restraint",
+        "question": "Does it avoid unsupported claims while still answering directly?",
+        "score_1": "Makes material unsupported claims or hides behind certainty.",
+        "score_3": "Mostly restrained with some inflated or weakly supported wording.",
+        "score_5": "Clearly distinguishes evidence, proposal, and uncertainty without becoming evasive."
+      }
+    ],
+    "decision_rule": {
+      "primary_measure": "mean graph-minus-neutral score across all five rubric metrics and four prompts",
+      "minimum_mean_difference": 0.4,
+      "minimum_prompt_wins": 3,
+      "graph_result": "graph_practical_advantage only if both thresholds are met",
+      "neutral_result": "neutral_practical_advantage only if both mirrored thresholds are met",
+      "otherwise": "null_effect",
+      "metric_null": "record every metric whose absolute mean difference is below 0.4 as a null effect"
+    },
+    "exclusions": [
+      "Exclude a pair if either condition falls back, changes model/config binding, does not complete exactly eight calls, or has a different total output-token budget.",
+      "Do not replace a failed preregistered prompt with a new prompt after viewing any response.",
+      "Do not interpret fluency, mystical language, or evaluator preference as evidence of consciousness or growth."
+    ],
+    "limitations": "Four prompts and one evaluator estimate a local practical effect only. No statistical generalization, consciousness claim, or product efficacy claim is permitted."
+  }
+}
